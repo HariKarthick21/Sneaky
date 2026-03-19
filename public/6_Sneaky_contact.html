@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaky Menu</title>
+    <title>Sneaky Contact</title>
     <link rel="shortcut icon" href="Images/PNG/s_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
@@ -17,14 +17,16 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid p-2">
                 <a class="navbar-brand" href="index.html"><img src="Images/PNG/sneaky_logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item me-3 fs-5"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item me-3 fs-5"><a class="nav-link" href="2_Sneaky_about.html">About</a></li>
-                        <li class="nav-item me-3 fs-5"><a class="nav-link active" href="#">Menu</a></li>
+                        <li class="nav-item me-3 fs-5"><a class="nav-link" href="3_Sneaky_menu.html">Menu</a></li>
                         <li class="nav-item me-3 fs-5"><a class="nav-link" href="4_Sneaky_chef.html">Chef</a></li>
                         <li class="nav-item dropdown me-3 fs-5"><a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,7 +34,7 @@
                                 <li><a class="dropdown-item p-3 fs-5" href="5_Sneaky_blog.html">Blog Details</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item me-3 fs-5"><a class="nav-link" href="6_Sneaky_contact.html">Contact</a></li>
+                        <li class="nav-item me-3 fs-5"><a class="nav-link active" href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +56,7 @@
 
                 <!-- Hero Content -->
                 <div class="col-md-4 hero-content d-flex flex-column justify-content-center">
-                    <h1>Food Menu</h1>
+                    <h1>Contact Us</h1>
                     <p class="text-muted">From set together our divided own saw divided the form god <br>seas move the you will fifth under replenish end</p>
                     <div class="hero_icons mt-5">
                         <div class="row text-center">
@@ -64,7 +66,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Carousel -->
                 <div class="col-md-6 px-0">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -102,90 +103,53 @@
         </div>
     </section>
 
-    <section class="food_menu">
-        <h6 class="text-danger fw-bold fs-3">Food Menu &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">────────</span></h6>
-        <h1 class="fw-bold">Delicious food</h1>
-        <div class="food_grid">
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="mb-5">Get in Touch</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <form id="GetData">
+                        <div class="mb-4">
+                            <textarea id="en_msg" class="form-control form-custom" rows="6" placeholder="Enter Message"></textarea>
+                            <small class="error_msg"></small>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <input type="text" id="en_name" class="form-control form-custom" placeholder="Enter your name">
+                                <small class="error_msg"></small>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <input type="text" id="en_mail" class="form-control form-custom" placeholder="Enter email address">
+                                <small class="error_msg"></small>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" id="en_sub" class="form-control form-custom" placeholder="Enter Subject">
+                            <small class="error_msg"></small>
+                        </div>
+                        <button type="submit" class="btn send-btn">Send Message</button>
+                    </form>
                 </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-            <div class="food_list">
-                <div class="food_con d-flex justify-content-evenly align-content-center">
-                    <img src="Images/PNG/food_menu_home.png" alt="food_list">
-                    <h2>Roasted Marrow</h2>
-                    <span class="text-dark mt-1">────────</span>
-                    <h3 class="text-danger"><i class="bi bi-currency-rupee text-danger"></i>32</h3>
-                </div>
-                <p class="food-text text-muted">Whales and darkness moving form cattle</p>
-            </div>
-        </div>
-    </section>
+                <div class="col-lg-4 contact-info">
+                    <div class="info-box"><i class="bi bi-house"></i><div>
+                    <h6>Buttonwood, California.</h6>
+                    <p>Rosemary, CA 91770</p>
 
-    <section class="reserve">
-        <div class="reserve_con text-center text-light">
-            <h3>Some Trendy And Popular Courses Offered</h3>
-            <h1>Under replenish give saying thing</h1>
-            <a href="#">Reservation</a>
+                    </div>
+                    </div>
+
+                    <div class="info-box"><i class="bi bi-phone"></i><div>
+                    <h6>00 (440) 9865 562</h6>
+                    <p>Mon to Fri 9am to 6pm</p>
+
+                    </div>
+                    </div>      
+
+                    <div class="info-box"><i class="bi bi-envelope"></i><div>
+                    <h6>support@colorlib.com</h6>
+                    <p>Send us your query anytime!</p>
+                </div>
+            </div>
         </div>
     </section>
 
