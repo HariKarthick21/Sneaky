@@ -78,6 +78,27 @@
         transition: 0.5s all ease-in-out;
     }
 
+    .bar{
+        display:block;
+        width:25px;
+        height:3px;
+        background:red;
+        margin:5px 0;
+        transition:0.4s;
+    }
+
+    .navbar-toggler:not(.collapsed) .bar:nth-child(1){
+        transform: rotate(45deg) translate(5px,5px);
+    }
+
+    .navbar-toggler:not(.collapsed) .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .navbar-toggler:not(.collapsed) .bar:nth-child(3){
+        transform: rotate(-45deg) translate(6px,-6px);
+    }
+
     /* hero */
     .hero {
         margin: 60px 20px;
