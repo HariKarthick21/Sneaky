@@ -121,15 +121,6 @@ if (MyForm) {
             });
         }
     });
-    
-    document.querySelectorAll("#MyData input").forEach(input => {
-        input.addEventListener("input", function () {
-            input.classList.remove("error");
-            if(errorSpans[input.id]){
-                errorSpans[input.id].innerText = "";
-            }
-        });
-    });
 }
 
 // Contact form-----------------------------------------------------------------------------------------------------------------
